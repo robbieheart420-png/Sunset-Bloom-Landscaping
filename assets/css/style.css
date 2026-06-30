@@ -1,61 +1,9 @@
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  color: #fff;
-  overflow-x: hidden;
+.home-bg {
+  background: url('assets/images/Home.png') center/cover no-repeat fixed;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.6);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-}
-
-.site-logo {
-  height: 80px;
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 100px 20px;
-  transition: background 1s ease-in-out;
-}
-
-.cta-button {
-  background: #d4a017;
-  color: #000;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(255,215,0,0.5);
-}
-
-.rose-vine-bg {
-  background: url('assets/images/rose-vine.png') center/cover no-repeat fixed;
-}
-
-.forest-bg {
-  background: url('assets/images/forest-mist.png') center/cover no-repeat fixed;
+.mistical-bg {
+  background: url('assets/images/mistical-forest.png') center/cover no-repeat fixed;
 }
 
 .twilight-bg {
@@ -66,12 +14,6 @@ section {
   background: url('assets/images/amber-timeline.png') center/cover no-repeat fixed;
 }
 
-.marble-bg {
-  background: url('assets/images/marble-gold.png') center/cover no-repeat fixed;
-}
-
-footer {
-  background: rgba(0,0,0,0.8);
-  text-align: center;
-  padding: 20px;
+.rose-bg {
+  background: url('assets/images/rose-vine.png') center/cover no-repeat fixed;
 }
