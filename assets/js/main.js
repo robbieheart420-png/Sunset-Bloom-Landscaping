@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }, options);
 
   sections.forEach(section => observer.observe(section));
+
+  // Create fireflies dynamically
+  const firefliesContainer = document.querySelector('.fireflies');
+  if (firefliesContainer) {
+    for (let i = 0; i < 20; i++) {
+      const fl = document.createElement('span');
+      fl.style.top = `${Math.random() * 100}%`;
+      fl.style.left = `${Math.random() * 100}%`;
+      fl.style.animationDelay = `${Math.random() * 10}s`;
+      firefliesContainer.appendChild(fl);
+    }
+  }
 });
 
 // Parallax scroll effect
