@@ -1,50 +1,10 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Prevent scroll */
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
-/* Hero section fills screen */
-/* Updated image path relative to this CSS file */
+/* Fullscreen hero */
 .hero {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
   height: 100vh;
-  background: url('../images/home.png') center/cover no-repeat;
+  width: 100%;
+  background-image: url('../images/Home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: background-image 0.8s ease-in-out;
-}
-
-/* Navigation */
-.top-nav {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  z-index: 10;
-}
-
-.top-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.top-nav a {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.top-nav a:hover {
-  color: #ffd700;
 }
