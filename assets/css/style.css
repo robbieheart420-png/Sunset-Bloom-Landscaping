@@ -12,13 +12,14 @@ html, body {
 }
 
 /* Hero section fills screen */
+/* Updated image path relative to this CSS file */
 .hero {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('home.png') center/cover no-repeat;
+  background: url('../images/home.png') center/cover no-repeat;
   transition: background-image 0.8s ease-in-out;
 }
 
