@@ -1,6 +1,6 @@
 /* ===========================
    Sunset Bloom Landscaping
-   Final Verified CSS
+   Final Verified CSS (GitHub Pages)
    =========================== */
 
 /* General layout */
@@ -68,25 +68,25 @@ section.visible {
   transform: translateY(0);
 }
 
-/* Backgrounds (correct paths for GitHub Pages) */
+/* Backgrounds (correct paths for your repo) */
 .home-bg {
-  background: url('assets/images/Home.png') center/cover no-repeat fixed;
+  background: url('../images/Home.png') center/cover no-repeat fixed;
 }
 
 .mistical-bg {
-  background: url('assets/images/mistical-forest.png') center/cover no-repeat fixed;
+  background: url('../images/mistical-forest.png') center/cover no-repeat fixed;
 }
 
 .twilight-bg {
-  background: url('assets/images/twilight-fireflies.png') center/cover no-repeat fixed;
+  background: url('../images/twilight-fireflies.png') center/cover no-repeat fixed;
 }
 
 .amber-bg {
-  background: url('assets/images/amber-timeline.png') center/cover no-repeat fixed;
+  background: url('../images/amber-timeline.png') center/cover no-repeat fixed;
 }
 
 .rose-bg {
-  background: url('assets/images/rose-vine.png') center/cover no-repeat fixed;
+  background: url('../images/rose-vine.png') center/cover no-repeat fixed;
 }
 
 /* Parallax effect */
