@@ -1,5 +1,5 @@
 /* General layout */
-body, html {
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -100,19 +100,13 @@ section.visible {
   pointer-events: none;
 }
 
-.fireflies::before,
-.fireflies::after {
-  content: '';
+.fireflies span {
   position: absolute;
   width: 6px;
   height: 6px;
   background: radial-gradient(circle, #ffd700 0%, transparent 70%);
   border-radius: 50%;
   animation: fly 10s infinite ease-in-out;
-}
-
-.fireflies::after {
-  animation-delay: 5s;
 }
 
 @keyframes fly {
