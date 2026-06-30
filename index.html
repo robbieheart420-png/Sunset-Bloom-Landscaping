@@ -1,70 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sunset Bloom Landscaping</title>
+// Fade-in animation on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  const options = { threshold: 0.3 };
 
-  <!-- Correct CSS path -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, options);
 
-  <!-- Correct JS path -->
-  <script src="assets/js/index.js" defer></script>
-</head>
+  sections.forEach(section => observer.observe(section));
 
-<body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Sunset Bloom Landscaping</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  // Create fireflies dynamically
+  const firefliesContainer = document.querySelector('.fireflies');
+  if (firefliesContainer) {
+    for (let i = 0; i < 20; i++) {
+      const fl = document.createElement('span');
+      fl.style.top = `${Math.random() * 100}%`;
+      fl.style.left = `${Math.random() * 100}%`;
+      fl.style.animationDelay = `${Math.random() * 10}s`;
+      firefliesContainer.appendChild(fl);
+    }
+  }
+});
 
-  <section id="home" class="hero home-bg parallax">
-    <div class="content">
-      <h2>Welcome to Sunset Bloom Landscaping</h2>
-      <p>Transforming outdoor spaces into breathtaking works of art.</p>
-    </div>
-  </section>
-
-  <section id="services" class="mistical-bg parallax">
-    <div class="content">
-      <h2>Our Services</h2>
-      <p>From garden design to full landscape renovation, we bring your vision to life.</p>
-    </div>
-  </section>
-
-  <section id="gallery" class="twilight-bg parallax">
-    <div class="content">
-      <h2>Gallery</h2>
-      <p>Explore our portfolio of enchanting landscapes and creative designs.</p>
-      <div class="fireflies"></div>
-    </div>
-  </section>
-
-  <section id="about" class="amber-bg parallax">
-    <div class="content">
-      <h2>About Us</h2>
-      <p>Founded on passion and artistry, Sunset Bloom Landscaping blends nature with imagination.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="rose-bg parallax">
-    <div class="content">
-      <h2>Contact Us</h2>
-      <p>Reach out today to start your dream landscape project.</p>
-      <a href="mailto:sunsetbloomlandscaping@gmail.com" class="btn">Email Us</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Sunset Bloom Landscaping. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+// Parallax scroll effect
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.parallax').forEach(bg => {
+    const offset = window.pageYOffset * 0.5;
+    bg.style.backgroundPositionY = `${offset}px`;
+  });
+});
