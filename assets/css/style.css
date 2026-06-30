@@ -1,19 +1,107 @@
+/* General layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Section styling */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
+}
+
+/* Backgrounds using your actual filenames */
 .home-bg {
-  background: url('assets/images/Home.png') center/cover no-repeat fixed;
+  background: url('../images/Home.png') center/cover no-repeat fixed;
 }
 
 .mistical-bg {
-  background: url('assets/images/mistical-forest.png') center/cover no-repeat fixed;
+  background: url('../images/mistical-forest.png') center/cover no-repeat fixed;
 }
 
 .twilight-bg {
-  background: url('assets/images/twilight-fireflies.png') center/cover no-repeat fixed;
+  background: url('../images/twilight-fireflies.png') center/cover no-repeat fixed;
 }
 
 .amber-bg {
-  background: url('assets/images/amber-timeline.png') center/cover no-repeat fixed;
+  background: url('../images/amber-timeline.png') center/cover no-repeat fixed;
 }
 
 .rose-bg {
-  background: url('assets/images/rose-vine.png') center/cover no-repeat fixed;
+  background: url('../images/rose-vine.png') center/cover no-repeat fixed;
+}
+
+/* Content box */
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffd700;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-size: 0.9em;
 }
