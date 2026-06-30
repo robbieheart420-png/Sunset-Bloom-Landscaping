@@ -1,17 +1,25 @@
-/* Reset */
+/* Reset everything */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Hero section */
-.hero {
-  position: relative;
-  height: 100vh;
+/* Prevent scrolling entirely */
+html, body {
+  height: 100%;
   overflow: hidden;
 }
 
+/* Hero section fills the screen */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Full-screen fixed image */
 .hero-image {
   width: 100%;
   height: 100%;
@@ -23,10 +31,10 @@
   transition: opacity 0.8s ease-in-out;
 }
 
-/* Navigation */
+/* Top-right navigation */
 .top-nav {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 40px;
   z-index: 10;
 }
@@ -49,7 +57,7 @@
   color: #ffd700;
 }
 
-/* Optional fade animation */
+/* Fade animation for image swap */
 .fade-out {
   opacity: 0;
 }
