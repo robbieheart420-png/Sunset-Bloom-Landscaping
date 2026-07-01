@@ -1,3 +1,4 @@
+
 /* Global Reset */
 * {
     margin: 0;
@@ -34,7 +35,7 @@ nav a:hover {
     color: #f4c542;
 }
 
-/* Hero Section */
+/* Hero Section (Home) */
 .hero {
     height: 100vh;
     background: url("../images/rose-vine.png") no-repeat center center/cover;
@@ -58,7 +59,7 @@ nav a:hover {
 /* About Section */
 .about {
     padding: 60px 20px;
-    background: url("../images/twilight-fireflies.png") no-repeat center center/cover;
+    background: url("../images/marble-gold.png") no-repeat center center/cover;
     text-align: center;
 }
 
@@ -97,7 +98,7 @@ nav a:hover {
 /* Gallery Section */
 .gallery {
     padding: 60px 20px;
-    background: url("../images/marble-gold.png") no-repeat center center/cover;
+    background: url("../images/rose-vine.png") no-repeat center center/cover;
     text-align: center;
 }
 
