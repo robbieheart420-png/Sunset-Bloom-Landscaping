@@ -160,3 +160,21 @@ footer {
   color: #aaa;
   margin-top: 40px;
 }
+
+.quote-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #f4c542;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.quote-btn:hover {
+  background: #fff;
+  color: #000;
+}
