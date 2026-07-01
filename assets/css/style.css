@@ -1,142 +1,142 @@
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
 }
 
 /* Navigation */
 nav {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    color: #f4c542;
+  color: #f4c542;
 }
 
-/* Home (Hero Section) — UPDATED */
+/* Home (Hero Section) */
 .hero {
-    height: 100vh;
-    background: url("../images/home.png") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 100vh;
+  background: url("../images/Home.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-    font-size: 60px;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
 }
 
 .hero p {
-    font-size: 24px;
-    margin-top: 10px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 /* About Section */
 .about {
-    padding: 60px 20px;
-    background: url("../images/marble-gold.png") no-repeat center center/cover;
-    text-align: center;
+  padding: 60px 20px;
+  background: url("../images/about.png") no-repeat center center/cover;
+  text-align: center;
 }
 
 .about h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: auto;
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* Services Section */
 .services {
-    padding: 60px 20px;
-    background: url("../images/amber-timeline.png") no-repeat center center/cover;
-    text-align: center;
+  padding: 60px 20px;
+  background: url("../images/services.png") no-repeat center center/cover;
+  text-align: center;
 }
 
 .services h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .service-box {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    border-radius: 10px;
-    border: 1px solid #f4c542;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  border: 1px solid #f4c542;
 }
 
 /* Gallery Section */
 .gallery {
-    padding: 60px 20px;
-    background: url("../images/rose-vine.png") no-repeat center center/cover;
-    text-align: center;
+  padding: 60px 20px;
+  background: url("../images/gallery.png") no-repeat center center/cover;
+  text-align: center;
 }
 
 .gallery h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .gallery img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid #f4c542;
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #f4c542;
 }
 
 /* Contact Section */
 .contact {
-    padding: 60px 20px;
-    background: url("../images/contact.png") no-repeat center center/cover;
-    text-align: center;
+  padding: 60px 20px;
+  background: url("../images/contact.png") no-repeat center center/cover;
+  text-align: center;
 }
 
 .contact h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: auto;
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* Footer */
 footer {
-    background: #000;
-    padding: 20px;
-    text-align: center;
-    color: #aaa;
-    margin-top: 40px;
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
 }
